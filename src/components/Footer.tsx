@@ -75,13 +75,20 @@ const Footer: React.FC = () => (
           <h3 className="font-display text-sm font-bold uppercase tracking-wider text-white">Contact</h3>
           <ul className="mt-4 space-y-3 text-sm">
             <li className="flex items-center gap-2.5">
-              <Mail className="h-4 w-4 shrink-0 text-accent" /> hello@nextgenit.com
+              <Mail className="h-4 w-4 shrink-0 text-accent" />
+              <a href="mailto:sadiqmallick6422@gmail.com" className="transition-colors hover:text-accent">
+                sadiqmallick6422@gmail.com
+              </a>
             </li>
             <li className="flex items-center gap-2.5">
-              <Phone className="h-4 w-4 shrink-0 text-accent" /> +1 (555) 123-4567
+              <Phone className="h-4 w-4 shrink-0 text-accent" />
+              <a href="tel:+966596518726" className="transition-colors hover:text-accent">
+                +966596518726
+              </a>
             </li>
-            <li className="flex items-center gap-2.5">
-              <MapPin className="h-4 w-4 shrink-0 text-accent" /> Tech District, Innovation City
+            <li className="flex items-start gap-2.5">
+              <MapPin className="h-4 w-4 shrink-0 text-accent mt-0.5" />
+              <span>Al-Reem Tower, Abu Bakr Al Siddiq Rd, Teba District, Al Jubail - 35513, KSA</span>
             </li>
           </ul>
         </div>

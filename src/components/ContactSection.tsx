@@ -74,10 +74,10 @@ const ContactSection: React.FC<{ compact?: boolean }> = ({ compact }) => {
             </p>
             <ul className="mt-8 space-y-5">
               {[
-                { icon: Mail, label: 'Direct Email', value: 'hello@nextgenit.com' },
-                { icon: Phone, label: 'Phone Line', value: '+1 (555) 123-4567' },
-                { icon: MapPin, label: 'Headquarters', value: 'Tech District, Innovation City' },
-                { icon: Clock, label: 'Support & Advisory Hours', value: 'Mon – Fri, 9:00 AM – 6:00 PM EST' },
+                { icon: Mail, label: 'Direct Email', value: 'sadiqmallick6422@gmail.com', href: 'mailto:sadiqmallick6422@gmail.com' },
+                { icon: Phone, label: 'Phone Line', value: '+966596518726', href: 'tel:+966596518726' },
+                { icon: MapPin, label: 'Headquarters', value: 'Al-Reem Tower, Abu Bakr Al Siddiq Rd, Teba District, Al Jubail - 35513, KSA', href: undefined },
+                { icon: Clock, label: 'Support & Advisory Hours', value: 'Sun – Thu, 9:00 AM – 6:00 PM', href: undefined },
               ].map((c) => (
                 <li key={c.label} className="flex items-start gap-4">
                   <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-accent/15 to-purple/15 text-accent-dark shadow-sm">
@@ -85,7 +85,13 @@ const ContactSection: React.FC<{ compact?: boolean }> = ({ compact }) => {
                   </span>
                   <div>
                     <p className="text-sm font-semibold text-brand-950">{c.label}</p>
-                    <p className="text-sm text-slate-600">{c.value}</p>
+                    {c.href ? (
+                      <a href={c.href} className="text-sm text-slate-600 transition-colors hover:text-accent-dark font-medium">
+                        {c.value}
+                      </a>
+                    ) : (
+                      <p className="text-sm text-slate-600">{c.value}</p>
+                    )}
                   </div>
                 </li>
               ))}
@@ -135,7 +141,7 @@ const ContactSection: React.FC<{ compact?: boolean }> = ({ compact }) => {
                   <label htmlFor="phone" className="mb-1.5 block text-sm font-semibold text-brand-950">
                     Phone Number <span className="text-red-500" aria-hidden="true">*</span>
                   </label>
-                  <input id="phone" type="tel" placeholder="+1 555 123 4567" {...register('phone')} className={inputClass(!!errors.phone)} />
+                  <input id="phone" type="tel" placeholder="+966 59 651 8726" {...register('phone')} className={inputClass(!!errors.phone)} />
                   {errors.phone && <p className="mt-1.5 text-xs text-red-500" role="alert">{errors.phone.message}</p>}
                 </div>
                 <div>
