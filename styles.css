@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 222 47% 11%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 214 32% 96%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 214 32% 96%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 192 100% 45%;
+    --accent-foreground: 222 47% 11%;
+    --border: 214 32% 91%;
+    --input: 214 32% 88%;
+    --ring: 192 100% 45%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --radius: 0.625rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom brand gradients & glow helpers matching NextGen IT Solution theme */
+.text-gradient-brand {
+  background: linear-gradient(135deg, #00D2FF 0%, #0077FE 45%, #8B5CF6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-purple {
+  background: linear-gradient(135deg, #8B5CF6 0%, #C084FC 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient-brand {
+  background: linear-gradient(135deg, #00A3FF 0%, #0066FF 45%, #8B5CF6 100%);
+}
+
+.bg-gradient-brand-subtle {
+  background: linear-gradient(135deg, rgba(0, 210, 255, 0.08) 0%, rgba(0, 102, 255, 0.05) 50%, rgba(139, 92, 246, 0.08) 100%);
+}
+
+.glow-brand {
+  box-shadow: 0 0 35px -5px rgba(0, 163, 255, 0.3), 0 0 20px -5px rgba(139, 92, 246, 0.2);
+}
+
+.glow-brand-sm {
+  box-shadow: 0 0 20px -3px rgba(0, 163, 255, 0.25), 0 0 10px -3px rgba(139, 92, 246, 0.15);
+}

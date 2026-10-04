@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="100%" height="100%">
+  <defs>
+    <!-- Left vertical fold gradient -->
+    <linearGradient id="fav-left" x1="28" y1="26" x2="68" y2="108" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00D2FF" />
+      <stop offset="35%" stop-color="#0099FF" />
+      <stop offset="100%" stop-color="#0055FE" />
+    </linearGradient>
+
+    <!-- Diagonal main ribbon gradient -->
+    <linearGradient id="fav-diag" x1="42" y1="28" x2="118" y2="132" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00E5FF" />
+      <stop offset="22%" stop-color="#0091FF" />
+      <stop offset="55%" stop-color="#2563EB" />
+      <stop offset="82%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+
+    <!-- Right upright column gradient -->
+    <linearGradient id="fav-right" x1="104" y1="26" x2="134" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0084FF" />
+      <stop offset="50%" stop-color="#1D4ED8" />
+      <stop offset="100%" stop-color="#1E3A8A" />
+    </linearGradient>
+
+    <!-- Bottom-right curl fold gradient -->
+    <linearGradient id="fav-curl" x1="90" y1="92" x2="126" y2="136" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6366F1" />
+      <stop offset="45%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#C084FC" />
+    </linearGradient>
+
+    <!-- Dynamic orbital swoosh gradient -->
+    <linearGradient id="fav-swoosh" x1="14" y1="110" x2="148" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00F0FF" />
+      <stop offset="28%" stop-color="#00B4D8" />
+      <stop offset="60%" stop-color="#60A5FA" />
+      <stop offset="85%" stop-color="#A855F7" />
+      <stop offset="100%" stop-color="#C084FC" />
+    </linearGradient>
+
+    <!-- Satellite dot gradient -->
+    <radialGradient id="fav-orb" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#E9D5FF" />
+      <stop offset="40%" stop-color="#A855F7" />
+      <stop offset="100%" stop-color="#6D28D9" />
+    </radialGradient>
+  </defs>
+
+  <g id="nextgen-emblem">
+    <!-- Right upright stem -->
+    <path
+      d="M102 26 H134 V116 C134 122 130 128 122 130 L102 114 Z"
+      fill="url(#fav-right)"
+    />
+
+    <!-- Left vertical curved stem -->
+    <path
+      d="M58 26 C44 26 34 36 34 50 V116 C34 126 42 134 52 134 H68 C72 134 76 130 76 125 V58 C76 46 82 36 94 30 L84 26 C76 26 66 26 58 26 Z"
+      fill="url(#fav-left)"
+    />
+
+    <!-- Diagonal main 3D fold -->
+    <path
+      d="M58 26 C46 26 38 34 36 46 C40 38 50 34 62 34 H72 L120 106 C124 112 126 118 126 124 C126 134 116 140 104 140 C90 140 80 132 78 122 L58 26 Z"
+      fill="url(#fav-diag)"
+    />
+
+    <!-- Bottom-right fold shadow/accent facet -->
+    <path
+      d="M92 102 L112 130 C116 135 120 136 124 133 C128 130 128 122 126 116 L118 100 C110 94 100 96 92 102 Z"
+      fill="url(#fav-curl)"
+      opacity="0.95"
+    />
+
+    <!-- Back portion of the orbit swoosh -->
+    <path
+      d="M112 58 C124 50 136 44 146 42 C148 42 148 44 145 47 C135 55 124 64 112 72 Z"
+      fill="url(#fav-swoosh)"
+      opacity="0.85"
+    />
+
+    <!-- Front portion of the orbit swoosh -->
+    <path
+      d="M18 104 C14 106 14 110 20 112 C34 118 56 122 84 116 C108 111 132 97 146 76 C148 73 147 71 144 72 C128 89 104 102 78 106 C52 110 32 108 20 104 Z"
+      fill="url(#fav-swoosh)"
+    />
+
+    <!-- Swoosh upper specular rim highlight -->
+    <path
+      d="M26 109 C52 116 88 112 118 98 C136 89 146 78 147 75 C146 76 138 86 118 95 C88 108 52 112 26 106 Z"
+      fill="#FFFFFF"
+      opacity="0.75"
+    />
+
+    <!-- Orbit Satellite Sphere -->
+    <circle cx="148" cy="38" r="9" fill="url(#fav-orb)" />
+    <!-- Soft specular glint on the satellite sphere -->
+    <circle cx="145" cy="35" r="2.5" fill="#FFFFFF" opacity="0.8" />
+  </g>
+</svg>
